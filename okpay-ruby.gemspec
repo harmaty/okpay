@@ -29,7 +29,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'okpay'
-  s.version = '0.1'
+  s.version = '0.2'
   s.authors = ["Jamie Quint"]
   s.date = '2013-04-18'
   s.summary = 'A simple library to deal with the OKPay SOAP API'
