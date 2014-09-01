@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.email = 'jamiequint@gmail.com'
   s.files = ['lib/okpay.rb','config/wsdl.xml']
   s.homepage = 'https://github.com/jamiequint/okpay-ruby'
-  s.add_dependency 'savon'
+  #s.add_dependency 'savon'
 end
   
   
