@@ -28,7 +28,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 Gem::Specification.new do |s|
-  s.name = 'okpay-ruby'
+  s.name = 'okpay'
   s.version = '0.2'
   s.authors = ["Jamie Quint"]
   s.date = '2013-04-18'
