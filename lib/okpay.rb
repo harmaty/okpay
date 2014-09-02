@@ -4,14 +4,6 @@ module Okpay
   class API
     class Client
       
-      class ::String
-        def camelize
-          self.gsub!(/^[a-z]|[\s_]+[a-z]/) { |a| a.upcase }
-          self.gsub!(/[\s_]/, '')
-          self
-        end
-      end
-      
       DEFAULTS = {
         :wsdl => File.join(File.dirname(File.expand_path(__FILE__)), '../config/wsdl.xml'),
         :adapter => :net_http

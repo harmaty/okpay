@@ -28,7 +28,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 Gem::Specification.new do |s|
-  s.name = 'okpay'
+  s.name = 'okpay-ruby'
   s.version = '0.2'
   s.authors = ["Jamie Quint"]
   s.date = '2013-04-18'
@@ -36,7 +36,8 @@ Gem::Specification.new do |s|
   s.email = 'jamiequint@gmail.com'
   s.files = ['lib/okpay.rb','config/wsdl.xml']
   s.homepage = 'https://github.com/jamiequint/okpay-ruby'
-  #s.add_dependency 'savon'
+  s.add_dependency 'savon'
+  s.add_dependency 'activesupport'
 end
   
   
