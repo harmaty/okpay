@@ -5,8 +5,9 @@ module Okpay
     class Client
       
       DEFAULTS = {
-        :wsdl => File.join(File.dirname(File.expand_path(__FILE__)), '../config/wsdl.xml'),
-        :adapter => :net_http
+        wsdl: File.join(File.dirname(File.expand_path(__FILE__)), '../config/wsdl.xml'),
+        adapter: :net_http,
+        ssl_verify_mode: :none
       }
       
       METHODS = {
@@ -26,7 +27,7 @@ module Okpay
         @api_key = api_key.strip
         @wallet_id = wallet_id.strip
         @config = DEFAULTS.merge! options
-        @soap_client = Savon.client(wsdl: @config[:wsdl], adapter: @config[:adapter])
+        @soap_client = Savon.client(wsdl: @config[:wsdl], adapter: @config[:adapter], ssl_verify_mode: @config[:ssl_verify_mode])
       end
       
       METHODS.each_pair do |method,args|
